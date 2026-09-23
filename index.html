@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RAIO ⚡ - Radar Local</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,sans-serif}
+body{background:#080808;color:#fff;padding:16px;max-width:480px;margin:auto}
+.top{display:flex;justify-content:space-between;align-items:center;margin:20px 0}
+.pro{background:#00ff88;color:#000;font-weight:900;padding:6px 12px;border-radius:20px;font-size:12px;text-decoration:none}
+.search{background:#1a1a1a;padding:12px;border-radius:14px;display:flex;gap:8px;margin-bottom:16px}
+.search input{flex:1;background:#2a2a2a;border:none;border-radius:10px;padding:12px;color:#fff}
+.search button{background:#fff;color:#000;border:none;border-radius:10px;padding:0 16px;font-weight:900}
+.card{background:#151515;border-radius:16px;padding:14px;margin-bottom:12px;border-left:4px solid #00ff88}
+.card.medio{border-color:#ffcc00}.card.fraco{border-color:#ff4444}
+.btn{display:block;background:#00ff88;color:#000;text-align:center;padding:12px;border-radius:10px;font-weight:900;margin-top:10px;text-decoration:none}
+.banner{background:linear-gradient(90deg,#00ff88,#00cc6a);color:#000;border-radius:14px;padding:16px;margin-top:20px;text-align:center}
+</style>
+</head>
+<body>
+<div class="top"><h1>RAIO ⚡</h1><a class="pro" href="#pro">PRO R$9,90</a></div>
+<div class="search"><input id="rua" placeholder="Digite sua rua em Floripa"><button onclick="buscar()">BUSCAR</button></div>
+<div id="lista"><p style="text-align:center;opacity:.5;margin-top:30px">Digite sua rua pra ver o radar</p></div>
+<div class="banner" id="pro"><b>RAIO PRO R$9,90/mês</b><br><small>Veja 30min antes + filtro FORTES</small><br><a href="https://wa.me/5548999999999?text=Quero%20PRO" style="background:#000;color:#00ff88;padding:10px 18px;border-radius:20px;display:inline-block;margin-top:8px;font-weight:900;text-decoration:none">ASSINAR NO WHATSAPP</a></div>
+<script>
+function buscar(){
+document.getElementById('lista').innerHTML=`
+<div class="card"><b>Bar do Alemão - Trindade</b><br><small>120m • 47 pessoas agora</small><br><span style="color:#00ff88">🔥 FORTE</span><a class="btn" href="https://www.betano.com" target="_blank">Apostar Online + Bônus →</a></div>
+<div class="card medio"><b>Conveniência Central</b><br><small>350m • 18 pessoas</small><br><span style="color:#ffcc00">⚡ MÉDIO</span></div>
+<div class="card fraco"><b>Banca da Praça</b><br><small>580m • 6 pessoas</small><br><span style="color:#ff4444">FRACO</span></div>`;
+}
+</script>
+</body>
+</html>
